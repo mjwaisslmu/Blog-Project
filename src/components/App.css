@@ -1,0 +1,72 @@
+.App {
+    display: grid;
+    grid-template-rows: min-content auto;
+    grid-template-columns: 150px auto;
+    height: 100vh;
+    overflow: scroll;
+    background-image: linear-gradient(lightblue, purple);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: purple;
+    color: white;
+    grid-column: 1 / span 2;
+    padding: 10px;
+}
+
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+article, form {
+    background-image: linear-gradient(lightblue, purple);
+    color: white;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+nav, article {
+    height: 100%;
+    padding: 10px;
+}
+
+nav {
+    background-color: lightblue;
+    color: purple;
+    width: 125px;
+}
+
+nav p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+article .date {
+    font-style: italic;
+}
+
+article .body {
+    white-space: break-spaces;
+}
+
+.error {
+    background-color: red;
+    color: gold;
+    padding: 5px;
+}
+
+button {
+    background-color: lightblue;
+    color: purple;
+    border-color: white;
+}
